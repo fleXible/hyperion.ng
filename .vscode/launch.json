@@ -24,6 +24,21 @@
       ]
     },
     {
+      // for OSX
+      "name": "hyperiond",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/deploy/hyperiond",
+      "args": ["--debug", "--userdata ${workspaceRoot}/deploy/hyperion"],
+      "miDebuggerServerAddress": "raspberrypi.fritz.box:9091",
+      "sourceFileMap": { "/hyperion.ng": "${workspaceRoot}" },
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+    },
+    {
       "name": "(Windows) hyperiond",
       "type": "cppvsdbg",
       "request": "launch",

@@ -1,0 +1,5 @@
+{
+    "C_Cpp.default.intelliSenseMode": "clang-x86",
+    "C_Cpp.default.includePath": "${workspaceRoot}",
+    "C_Cpp.loggingLevel": "Information"
+}
