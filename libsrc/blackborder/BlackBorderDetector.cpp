@@ -23,7 +23,7 @@ uint8_t BlackBorderDetector::calculateThreshold(double threshold) const
 
 	uint8_t blackborderThreshold = uint8_t(rgbThreshold);
 
-	//Debug(Logger::getInstance("BLACKBORDER"), "threshold set to %f (%d)", threshold , int(blackborderThreshold));
+	Info(Logger::getInstance("BLACKBORDER"), "threshold set to %f (%d)", threshold , int(blackborderThreshold));
 
 	return blackborderThreshold;
 }

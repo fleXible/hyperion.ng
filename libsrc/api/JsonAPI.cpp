@@ -78,7 +78,7 @@ bool JsonAPI::handleInstanceSwitch(quint8 inst, bool forced)
 {
 	if (API::setHyperionInstance(inst))
 	{
-		Debug(_log, "Client '%s' switch to Hyperion instance %d", QSTRING_CSTR(_peerAddress), inst);
+		//Debug(_log, "Client '%s' switch to Hyperion instance %d", QSTRING_CSTR(_peerAddress), inst);
 		// the JsonCB creates json messages you can subscribe to e.g. data change events
 		_jsonCB->setSubscriptionsTo(_hyperion);
 		return true;
