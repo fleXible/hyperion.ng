@@ -1,5 +1,12 @@
 {
     "C_Cpp.default.intelliSenseMode": "clang-x86",
-    "C_Cpp.default.includePath": "${workspaceRoot}",
-    "C_Cpp.loggingLevel": "Information"
+    "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
+    "C_Cpp.loggingLevel": "Information",
+    "cmake.buildArgs": [
+      "-Wno−deprecated"
+    ],
+    "cmake.buildTask": true,
+    "cmake.configureOnOpen": false,
+    "cmake.clearOutputBeforeBuild": false,
+    "cmake.loggingLevel": "debug"
 }

@@ -14,9 +14,9 @@ set(CMAKE_AUTOMOC ON)
 # auto prepare .qrc files
 set(CMAKE_AUTORCC ON)
 
-if ( POLICY CMP0026 )
-	CMAKE_POLICY( SET CMP0026 OLD )
-endif()
+CMAKE_POLICY( SET CMP0011 NEW )
+CMAKE_POLICY( SET CMP0026 NEW )
+
 
 # Configure CCache if available
 find_program(CCACHE_FOUND ccache)
